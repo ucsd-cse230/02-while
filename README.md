@@ -1,10 +1,9 @@
-# Assignment 1: Recursion, Datatypes and Higher Order Functions (400 points)
+# Assignment 1: Monadic State and Parsing
 
 ## Overview
 
 The overall objective of this assignment is to get some 
-experience using the *core* features of functional programming,
-namely, Recursion, Datatypes and Higher-Order functions.
+experience using the *State-Transformer monad*, and *Parser Combinators*.
 
 The assignment is in the following files that you will modify
 
