@@ -4,6 +4,12 @@ module CSE230.Fold where
 
 import qualified Data.List as L
 
+libraryFoldl :: (b -> a -> b) -> b -> [a] -> b
+libraryFoldl = L.foldl
+
+libraryFoldr :: (a -> b -> b) -> b -> [a] -> b
+libraryFoldr = foldr
+
 -------------------------------------------------------------------------------
 -- | Using the standard `L.foldl` define a list `reverse` function
 -------------------------------------------------------------------------------
@@ -31,7 +37,7 @@ myReverse xs = L.foldl f b xs
 -- BECAUSE: (1 - (2 - (3 - (4 - (5 - 0)))))
 
 myFoldr :: (a -> b -> b) -> b -> [a] -> b
-myFoldr f b xs = L.foldl f' b' xs' 
+myFoldr f b xs = libraryFoldl f' b' xs'
   where 
     f'         = error "fill this in"
     b'         = error "fill this in"
@@ -46,7 +52,7 @@ myFoldr f b xs = L.foldl f' b' xs'
 -- ((((0 - 1) - 2)  - 3) - 4) - 5
 
 myFoldl :: (a -> b -> a) -> a -> [b] -> a
-myFoldl f b xs = foldr f' b' xs'
+myFoldl f b xs = libraryFoldr f' b' xs'
   where 
     f'         = error "fill this in"
     b'         = error "fill this in"

@@ -31,7 +31,7 @@ with suitable Haskell implementations.
 
 ### Assignment Testing and Evaluation
 
-Your functions/programs **must** compile and run on the [VM](TODO).
+Your functions/programs **must** compile and run on the [VM](VM-URL).
 
 Most of the points, will be awarded automatically, by
 **evaluating your functions against a given test suite**.
@@ -72,7 +72,7 @@ but you will not be graded on this.
 
 To submit your code:
 
-1. Do a `git commit` and `git push` to make your repo uptodate;
+1. Do a `git commit` and `git push` to make your repo up-to-date;
 2. Submit on gradescope, by pointing gradescope to your github repo.
 
 ## Problem 1: Fold
@@ -86,3 +86,5 @@ Fill in the missing code in [Eval.hs](/src/CSE230/While/Eval.hs)
 ## Problem 3: A Parser for WHILE 
 
 Fill in the missing code in [Parse.hs](/src/CSE230/While/Parse.hs)
+
+[VM-URL]: https://drive.google.com/file/d/1BlYeSZPNVrxUu8jQWgUkquRBjE6wQww3/view?usp=sharing

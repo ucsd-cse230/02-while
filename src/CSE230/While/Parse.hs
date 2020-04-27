@@ -1,8 +1,6 @@
 module CSE230.While.Parse where
 
 import Text.Parsec hiding (State, between)
--- import Text.Parsec.Combinator hiding (between)
--- import Text.Parsec.Char
 import Text.Parsec.String
 import qualified CSE230.While.Types as H
 
@@ -74,13 +72,13 @@ statementP = error "fill this in"
 -------------------------------------------------------------------------------
 parseFile :: FilePath -> IO (Either ParseError H.Statement)
 -------------------------------------------------------------------------------
--- >>> ((Right H.w_fact) ==) <$> P.parseFile "test/in/fact.imp"
+-- >>> ((Right H.w_fact) ==) <$> parseFile "test/in/fact.imp"
 -- True
--- >>> ((Right H.w_test) == ) <$> P.parseFile "test/in/test.imp"
+-- >>> ((Right H.w_test) == ) <$> parseFile "test/in/test.imp"
 -- True
--- >>> ((Right H.w_abs) == ) <$> P.parseFile "test/in/abs.imp"
+-- >>> ((Right H.w_abs) == ) <$> parseFile "test/in/abs.imp"
 -- True
--- >>> ((Right H.w_times) == ) <$> P.parseFile "test/in/times.imp"
+-- >>> ((Right H.w_times) == ) <$> parseFile "test/in/times.imp"
 -- True
 
 

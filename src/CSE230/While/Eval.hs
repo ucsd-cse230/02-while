@@ -38,25 +38,25 @@ evalE e = do
 store0 :: H.Store
 store0 = fromList [("X", H.IntVal 10),("Y", H.IntVal 20)]
 
--- >>> eval store0 (H.Var "Z") 
--- 0
+-- >>> eval store0 (H.Var "Z")
+-- IntVal 0
 -- >>> eval store0 (H.Val  (H.IntVal 92))
--- 92
--- >>> eval store0 (H.Op H.Plus  (H.Var "X") (H.Var "Y")) 
+-- IntVal 92
+-- >>> eval store0 (H.Op H.Plus  (H.Var "X") (H.Var "Y"))
 -- IntVal 30
--- >>> eval store0 (H.Op H.Minus (H.Var "X") (H.Var "Y")) 
+-- >>> eval store0 (H.Op H.Minus (H.Var "X") (H.Var "Y"))
 -- IntVal (-10)
--- >>> eval store0 (H.Op H.Times (H.Var "X") (H.Var "Y")) 
+-- >>> eval store0 (H.Op H.Times (H.Var "X") (H.Var "Y"))
 -- IntVal 200
--- >>> eval store0 (H.Op H.Divide (H.Var "Y") (H.Var "X")) 
+-- >>> eval store0 (H.Op H.Divide (H.Var "Y") (H.Var "X"))
 -- IntVal 2
--- >>> eval store0 (H.Op H.Gt (H.Var "Y") (H.Var "X")) 
+-- >>> eval store0 (H.Op H.Gt (H.Var "Y") (H.Var "X"))
 -- BoolVal True
--- >>> eval store0 (H.Op H.Ge (H.Var "Y") (H.Var "X")) 
+-- >>> eval store0 (H.Op H.Ge (H.Var "Y") (H.Var "X"))
 -- BoolVal True
--- >>> eval store0 (H.Op H.Lt (H.Var "Y") (H.Var "X")) 
+-- >>> eval store0 (H.Op H.Lt (H.Var "Y") (H.Var "X"))
 -- BoolVal False
--- >>> eval store0 (H.Op H.Le (H.Var "Y") (H.Var "X")) 
+-- >>> eval store0 (H.Op H.Le (H.Var "Y") (H.Var "X"))
 -- BoolVal False
 --
 
@@ -132,7 +132,7 @@ evalS (H.If e s1 s2)     = error "fill this in"
 -- fromList [("F",IntVal 2),("N",IntVal 0),("X",IntVal 1),("Z",IntVal 2)]
 --
 -- >>> execS H.w_abs empty
--- fromList [("F",IntVal 2),("N",IntVal 0),("X",IntVal 1),("Z",IntVal 2)]
+-- fromList [("X",IntVal 3)]
 --
 -- >>> execS H.w_times empty
 -- fromList [("X",IntVal 0),("Y",IntVal 3),("Z",IntVal 30)]
@@ -153,6 +153,9 @@ execS s = error "fill this in"
    the value of all variables at the end of execution.
  -}
 
+-- >>> run H.w_test
+-- Output Store:
+-- fromList [("X",IntVal 0),("Y",IntVal 10)]
 
 run :: H.Statement -> IO ()
 run stmt = do 
@@ -177,8 +180,9 @@ printStore e = do
 -- When you are done you should see the following at the ghci prompt
 --
 -- >>> runFile "test/in/test.imp"
+-- Output Store:
 -- fromList [("X",IntVal 0),("Y",IntVal 10)]
 
--- >>> runFile "test/in/fact.imp" 
+-- >>> runFile "test/in/fact.imp"
 -- Output Store:
 -- fromList [("F",IntVal 2),("N",IntVal 0),("X",IntVal 1),("Z",IntVal 2)]
