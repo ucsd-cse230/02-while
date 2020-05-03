@@ -20,7 +20,8 @@ import qualified CSE230.While.Types as H
 valueP :: Parser H.Value
 valueP = intP <|> boolP
 
--- To do so, fill in the implementations of
+-- First, fill in the implementation of `intP`. You can assume that the numbers
+-- in our language are non-negative.
 
 intP :: Parser H.Value
 intP = error "fill this in"
@@ -50,7 +51,8 @@ opP = error "fill this in"
 varP :: Parser H.Variable
 varP = many1 upper
 
--- Use the above to write a parser for `Expression` values
+-- Use the above to write a parser for `Expression` values. Assume that
+-- operators are right associative, and they all have the same precedence.
 
 exprP :: Parser H.Expression
 exprP   = error "fill this in"
