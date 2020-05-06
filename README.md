@@ -1,4 +1,4 @@
-# Assignment 1: Monadic State and Parsing
+# 02-While: Monadic State and Parsing
 
 ## Overview
 
