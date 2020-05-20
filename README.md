@@ -1,4 +1,4 @@
-# Assignment 1: Monadic State and Parsing
+# 02-While: Monadic State and Parsing
 
 ## Overview
 
@@ -31,7 +31,7 @@ with suitable Haskell implementations.
 
 ### Assignment Testing and Evaluation
 
-Your functions/programs **must** compile and run on the [VM](VM-URL).
+Your functions/programs **must** compile and run on the [VM][VM-URL].
 
 Most of the points, will be awarded automatically, by
 **evaluating your functions against a given test suite**.
