@@ -11,6 +11,13 @@ import qualified CSE230.While.Types as H
    for the WHILE language from the previous problem.
 -}
 
+parseFromString :: Parser a -> String -> Either ParseError a 
+parseFromString p s = runParser p () "DUMMY" s 
+
+-- >>> parseFromString varP "X45"
+-- Right "X"
+--
+
 -------------------------------------------------------------------------------
 -- | Parsing Constants
 -------------------------------------------------------------------------------
