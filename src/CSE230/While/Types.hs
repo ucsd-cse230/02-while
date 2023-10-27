@@ -11,11 +11,11 @@ import qualified Data.Map as M -- (findWithDefault, insert, empty)
    binary operators applied to sub-expressions -}
 
 data Statement 
-   = Assign   Variable   Expression           -- ^ x = e
-   | If       Expression Statement Statement  -- ^ if (e) {s1} else {s2}
-   | While    Expression Statement            -- ^ while (e) {s}
+   = Assign   Variable   Expression           -- ^ x := e
+   | If       Expression Statement Statement  -- ^ if e then s1 else s2 endif
+   | While    Expression Statement            -- ^ while e do s endwhile
    | Sequence Statement  Statement            -- ^ s1; s2
-   | Skip                                     -- ^ no-op
+   | Skip                                     -- ^ skip  (i.e., no-op)
    deriving (Eq, Show)
 
 --------------------------------------------------------------------------------

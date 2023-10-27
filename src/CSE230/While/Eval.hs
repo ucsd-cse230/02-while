@@ -24,7 +24,7 @@ evalE e = do
   return (eval s e)
 
 {- Fill in the implementation of `eval` that
-   that takes as input an `Store` and an `Expression` 
+   that takes as input a `Store` and an `Expression` 
    and returns a `Value`.
    
    HINT: The value `get` is of type `State Store Store`. Thus, to extract 
@@ -104,11 +104,11 @@ boolOp _  _            _            = H.BoolVal False
 -}
 
 evalS :: H.Statement -> State H.Store ()
-evalS w@(H.While e s)    = error "fill this in"
 evalS H.Skip             = error "fill this in"
 evalS (H.Sequence s1 s2) = error "fill this in"
 evalS (H.Assign x e )    = error "fill this in"
 evalS (H.If e s1 s2)     = error "fill this in"
+evalS w@(H.While e s)    = error "fill this in"
 
 
 -------------------------------------------------------------------------------
