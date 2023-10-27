@@ -1,9 +1,9 @@
-# 02-While: Monadic State and Parsing
+# 02-While: Monadic State and Parsing (300 points)
 
 ## Overview
 
 The overall objective of this assignment is to get some 
-experience using the *State-Transformer monad*, and *Parser Combinators*.
+experience using the *State monad* and *Parser Combinators*.
 
 The assignment is in the following files that you will modify
 
@@ -31,12 +31,10 @@ with suitable Haskell implementations.
 
 ### Assignment Testing and Evaluation
 
-Your functions/programs **must** compile and run on the [VM][VM-URL].
-
 Most of the points, will be awarded automatically, by
 **evaluating your functions against a given test suite**.
 
-[Tests.hs](/tests/Test.hs) contains a very small suite
+[Tests.hs](/test/Test.hs) contains a very small suite
 of tests which gives you a flavor of of these tests.
 When you run
 
@@ -72,23 +70,23 @@ but you will not be graded on this.
 
 To submit your code by running `make turnin` or alternately
 
-1. Do a `git commit` and `git push` to make your repo up-to-date;
-2. Submit on gradescope, by pointing gradescope to your github repo.
+```bash
+$ make turnin
+```
 
 ### Collaborators
 
 As before please add the name of any collaborator in the file `COLLABORATORS.md`
 
-## Problem 1: Fold
+## Problem 1: Fold (60 Points)
 
 Fill in the missing code in [Fold.hs](/src/CSE230/Fold.hs)
 
-## Problem 2: An Evaluator for WHILE
+## Problem 2: An Evaluator for WHILE (160 points)
 
 Fill in the missing code in [Eval.hs](/src/CSE230/While/Eval.hs)
 
-## Problem 3: A Parser for WHILE 
+## Problem 3: A Parser for WHILE (80 points)
 
 Fill in the missing code in [Parse.hs](/src/CSE230/While/Parse.hs)
 
-[VM-URL]: https://drive.google.com/file/d/1BlYeSZPNVrxUu8jQWgUkquRBjE6wQww3/view?usp=sharing
