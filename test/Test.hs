@@ -52,9 +52,9 @@ probEval sc = testGroup "Problem 2: Eval"
 probParse ::  Score -> TestTree
 probParse sc = testGroup "Problem 3: Parse"
   [ scoreTestI ((\_ -> parseFile "test/in/fact.imp"), (), Right w_fact, 5, "parse-1")
-  , scoreTestI ((\_ -> parseFile "test/in/abs.imp"), (), Right w_abs, 5, "parse-1")
-  , scoreTestI ((\_ -> parseFile "test/in/times.imp"), (), Right w_times, 5, "parse-1")
-  , scoreTestI ((\_ -> parseFile "test/in/test.imp"), (), Right w_test, 5, "parse-1")
+  , scoreTestI ((\_ -> parseFile "test/in/abs.imp"), (), Right w_abs, 5, "parse-2")
+  , scoreTestI ((\_ -> parseFile "test/in/times.imp"), (), Right w_times, 5, "parse-3")
+  , scoreTestI ((\_ -> parseFile "test/in/test.imp"), (), Right w_test, 5, "parse-4")
   ]
   where
     scoreTestI :: (Show b, Eq b) => (a -> IO b, a, b, Int, String) -> TestTree

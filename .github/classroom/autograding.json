@@ -1,0 +1,214 @@
+{
+  "tests": [
+     { 
+      "name": "rev-1",
+      "run": "stack test --test-arguments '-p rev-1'",
+      "setup": "",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 5
+    },
+     { 
+      "name": "foldr-1",
+      "run": "stack test --test-arguments '-p foldr-1'",
+      "setup": "",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 5
+    },
+     { 
+      "name": "foldl-1",
+      "run": "stack test --test-arguments '-p foldl-1'",
+      "setup": "",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 5
+    },
+     { 
+      "name": "eval-1",
+      "run": "stack test --test-arguments '-p eval-1'",
+      "setup": "",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+     { 
+      "name": "eval-2",
+      "run": "stack test --test-arguments '-p eval-2'",
+      "setup": "",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+     { 
+      "name": "eval-3",
+      "run": "stack test --test-arguments '-p eval-3'",
+      "setup": "",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+     { 
+      "name": "eval-4",
+      "run": "stack test --test-arguments '-p eval-4'",
+      "setup": "",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+     { 
+      "name": "eval-5",
+      "run": "stack test --test-arguments '-p eval-5'",
+      "setup": "",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+     { 
+      "name": "eval-6",
+      "run": "stack test --test-arguments '-p eval-6'",
+      "setup": "",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+     { 
+      "name": "eval-7",
+      "run": "stack test --test-arguments '-p eval-7'",
+      "setup": "",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+     { 
+      "name": "eval-8",
+      "run": "stack test --test-arguments '-p eval-8'",
+      "setup": "",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+     { 
+      "name": "eval-9",
+      "run": "stack test --test-arguments '-p eval-9'",
+      "setup": "",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+     { 
+      "name": "eval-10",
+      "run": "stack test --test-arguments '-p eval-10'",
+      "setup": "",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 2
+    },
+     { 
+      "name": "exec-1",
+      "run": "stack test --test-arguments '-p exec-1'",
+      "setup": "",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 5
+    },
+     { 
+      "name": "exec-2",
+      "run": "stack test --test-arguments '-p exec-2'",
+      "setup": "",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 5
+    },
+     { 
+      "name": "exec-3",
+      "run": "stack test --test-arguments '-p exec-3'",
+      "setup": "",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 5
+    },
+     { 
+      "name": "exec-4",
+      "run": "stack test --test-arguments '-p exec-4'",
+      "setup": "",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 5
+    },
+     { 
+      "name": "parse-1",
+      "run": "stack test --test-arguments '-p parse-1'",
+      "setup": "",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 5
+    },
+     { 
+      "name": "parse-2",
+      "run": "stack test --test-arguments '-p parse-2'",
+      "setup": "",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 5
+    },
+     { 
+      "name": "parse-3",
+      "run": "stack test --test-arguments '-p parse-3'",
+      "setup": "",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 5
+    },
+     { 
+      "name": "parse-4",
+      "run": "stack test --test-arguments '-p parse-4'",
+      "setup": "",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 30,
+      "points": 5
+    }
+  ]
+}
